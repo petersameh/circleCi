@@ -14,10 +14,9 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: echo world
-  # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+
 workflows:
-  sample: # This is the name of the workflow, feel free to change it to better match your workflow.
-    # Inside the workflow, you define the jobs you want to run.
+  test: 
     jobs:
       - print_hello
       - print_world
